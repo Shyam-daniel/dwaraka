@@ -1,0 +1,404 @@
+<html>
+
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <style>
+
+        /*-------------- nav bar start here---------------------- */
+
+            body{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Gothic A1', sans-serif;
+                font-family: 'Merriweather Sans', sans-serif;
+            }
+
+            .form-div{
+                width: 450px;
+                height: 1550px;
+                background-color: #277BC0;
+                box-shadow: 10px 10px 40px rgb(192, 192, 192);
+                padding-left: 30px;
+                line-height: 30px;
+                color: white;
+            }
+
+            .logo{
+                width: 300px;
+                height: auto;
+                margin-left: -12px;
+                margin-top: 20px;
+
+            }
+
+            .nav-form{
+                width: 80%;
+                height: 30px;
+                background-color: transparent;
+                color: white;
+                border-bottom: 1.5px solid white;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                padding-left: 15px;
+                margin-bottom: 15px;
+                
+            }
+
+            .plan-name{
+                background-color: white;
+                width: 80%;
+                height: 30px;
+                padding-left: 10px;
+                border: none;
+            }
+
+            .generate{
+                width: 80%;
+                height: 30px;
+                border: none;
+            }
+
+            /*-------------- nav bar start here---------------------- */
+
+
+
+
+            /*-------------- print area starts here---------------------- */
+
+            .print-area{
+                width: 800px;
+                height: 1150px;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                left: 600px;
+                box-shadow: 0px 0px 20px rgb(221, 221, 221);
+                border-radius: 15px;
+            }
+
+            .bill-header{
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .invoice{
+                width: 100%;
+                height: 30px;
+                background-color: #0063b4;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: white;
+                padding-top: 5px;  
+                font-size: 22px;
+            }
+
+            .content{
+                width: 42.5%;
+                height: 100px;
+                background-color: rgb(255, 255, 255);
+                float: left;
+                padding: 30px;
+            }
+
+            .invoice-breakup{
+                width: 100%;
+                height: 25px;
+                background-color: #0063b4;
+                float: left;
+                margin-top: 20px;
+                text-align: center;
+                color: white;
+                padding-top: 5px;  
+                
+                
+            }
+
+            table{
+                border-collapse: collapse;
+                width: 100%;
+                
+            }
+
+            tr{
+                
+                background-color: #96cefc;
+                color: black;
+            }
+            
+               
+
+            .table-desc{
+               
+                background-color: #e8f5ff;
+                color: black;
+            }
+
+            .table-blue{
+               
+               background-color: #0063b4;
+               color: white;
+           }
+
+
+
+            .desc{
+                
+                width: 47%;
+                height: 27px;
+                padding-left: 30px;
+                text-align: left;
+               
+            }
+
+            .qty{
+                width: 14%;
+                height: 27px;
+                text-align: center;
+            }
+
+            .un-ct{
+                width: 18%;
+                height: 27px;
+                text-align: right;
+                padding-right: 20px;  
+                
+            }
+
+            .total{
+                width: 18%;
+                height: 27px;
+                text-align: right;
+                padding-right: 30px;    
+            }
+        </style>
+
+
+        
+    </head>
+
+    <body>
+
+        <!--  -------------- nav bar start here---------------------- -->
+
+        <nav class="form-div">
+
+            <img src="images/Dwaraka Logo-02.png" class="logo">
+            
+            <form>
+                    <br>
+                    
+                    Customer Name : <br><input type="text" class="nav-form"><br>
+                    Address : <br><input type="text" class="nav-form"><br>
+                    Mobile no : <br><input type="text" class="nav-form"><br>
+                    GSTIN : <br><input type="text" class="nav-form"><br>
+                    Customer Account No: : <br><input type="text" class="nav-form"><br>
+                    Username : <br><input type="text" class="nav-form"><br>
+                    Billing Date : <br><input type="text" class="nav-form"><br>
+                    Due Date: <br><input type="text" class="nav-form"><br>
+                    
+                    
+                    
+                    Plan Name :     <select class="plan-name">
+                                        <option>UL 100 MBPS</option>
+                                        <option>UL 100 MBPS</option>
+                                        <option>UL 100 MBPS</option>
+                                        <option>UL 100 MBPS</option>
+                                    </select>
+                                    <br><br>
+
+                    Plan Duration : <select class="plan-name">
+                                        <option>1 MONTH</option>
+                                        <option>3 MONTH</option>
+                                        <option>6 MONTH</option>
+                                        <option>9 MONTH</option>
+                                    </select>
+                                     <br><br>
+                    
+                    Credit Terms : <select class="plan-name">
+                                        <option>1 MONTH</option>
+                                        <option>3 MONTH</option>
+                                        <option>6 MONTH</option>
+                                        <option>9 MONTH</option>
+                                    </select>
+                                    <br><br>
+                    
+                    Installation Charges : <br><input type="text" class="nav-form"><br>
+                    PO Charges : <br><input type="text" class="nav-form"><br>
+                    OTT Charges : <br><input type="text" class="nav-form"><br><br>
+
+                    <input type="submit" value="Generate" class="generate">
+
+            </form>
+
+
+
+
+        </nav>
+
+        <!--  -------------- nav bar start here---------------------- -->
+
+
+
+        <!--  -------------- print area starts here---------------------- -->
+
+            <div class="print-area">
+
+                <img src="images/bill-header.jpg" class="bill-header" />
+
+
+                <div class="invoice">INVOICE</div>
+
+                <div class="content">
+                    INVOICE FROM<br>	
+                    DWARAKA CABLE AND INTERNET SERVICES	<br>
+                    
+                    Chikkabanavara, Bengaluru  - 560090 <br>					
+                    Mob.: +91 9945588877 <br>
+                    GSTIN: 27AAOPV4482B1Z8	<br>
+                </div>
+
+
+
+                <div class="content">
+                    INVOICE FROM<br>	
+                    DWARAKA CABLE AND INTERNET SERVICES	<br>
+                    
+                    Chikkabanavara, Bengaluru  - 560090 <br>					
+                    Mob.: +91 9945588877 <br>
+                    GSTIN: 27AAOPV4482B1Z8	<br>
+
+                </div>
+
+
+                <div class="content">
+                    Customer Account No.:<br>	
+                    Invoice No.:	<br>
+                    
+                    Username:<br>
+                </div>
+
+
+                <div class="content">
+                    Billing Date:<br>	
+                    Due Date:<br>
+
+                </div>
+
+                <div class="invoice-breakup">INVOICE BREAKUP</div>
+
+                <table>
+
+
+                    <tr class="table-header">
+                        <th class="desc">Description</th>
+                        <th class="qty">quantity</th>
+                        <th class="un-ct">unit cost</th>
+                        <th class="total">total</th>
+                    </tr>
+
+                    <tr class="table-desc">
+                        <td class="desc">Description</td>
+                        <td class="qty">quantity</td>
+                        <td class="un-ct">unit cost</td>
+                        <td class="total">total</td>
+                    </tr>
+
+                    <tr class="table-desc">
+                        <td class="desc"></td>
+                        <td class="qty"></td>
+                        <td class="un-ct">CGST</td>
+                        <td class="total"></td>
+                    </tr>
+
+                    <tr class="table-desc">
+                        <td class="desc"></td>
+                        <td class="qty"></td>
+                        <td class="un-ct">SGST</td>
+                        <td class="total">total</td>
+                    </tr>
+
+                    <tr class="table-blue">
+                        <td class="desc"></td>
+                        <td class="qty"></td>
+                        <td class="un-ct">SGST</td>
+                        <td class="total">total</td>
+                    </tr>
+
+                </table><br><br>
+
+
+                <div class="invoice-breakup">INVOICE BREAKUP</div>
+
+                <table>
+
+
+                    <tr>
+                        <th class="desc">Description</th>
+                        <th class="qty">quantity</th>
+                        <th class="un-ct">unit cost</th>
+                        <th class="total">total</th>
+                    </tr>
+
+                    <tr class="table-desc">
+                        <td class="desc">Description</td>
+                        <td class="qty">quantity</td>
+                        <td class="un-ct">unit cost</td>
+                        <td class="total">total</td>
+                    </tr>
+
+                    
+
+                    
+
+                </table>
+
+
+
+                <!-- <div class="invoice">
+                    <h2>INVOICE</h2>
+
+                </div>
+
+                <div class="invoice-one-left">
+                    
+                </div>
+
+
+                <div class="invoice-one-left">
+                    
+                </div>
+
+                <div class="invoice-one-left">
+                    					
+                  
+                </div>
+
+                <div class="invoice-one-left">
+                    
+                    
+                    
+                </div> -->
+
+                
+
+                
+            </div>
+
+           
+    </body>
+
+
+
+
+</html>
